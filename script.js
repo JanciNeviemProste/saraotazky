@@ -81,8 +81,8 @@ const quizData = [
         type: 'single',
         question: "Predá primár Šlastan niekedy auto? 🤔",
         answers: ["Nie 😅", "Možno za 100 rokov a 200€", "Daruje ho na charitu", "Cez Bazoš možno niekedy"],
-        correct: 0,
-        feedback: "Haha presne! 😄"
+        correct: -1, // All valid
+        feedback: "Haha dobrá odpoveď! 😄"
     },
     {
         type: 'text',
@@ -101,8 +101,8 @@ const quizData = [
         type: 'single',
         question: "Patrí 🍍 na pizzu?",
         answers: ["Áno", "Nie", "Je to jedno"],
-        correct: 2,
-        feedback: "Správne! Každý má svoj vkus! 🍕"
+        correct: -1, // All valid
+        feedback: "Každý má svoj vkus! 🍕"
     },
     {
         type: 'text',
