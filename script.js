@@ -178,6 +178,14 @@ function initQuiz() {
     }
 }
 
+// Random Ali cat images
+const aliImages = ['ali1.jpeg', 'ali2.jpeg', 'ali3.jpeg', 'ali4.jpeg'];
+
+function getRandomAliImage() {
+    const randomIndex = Math.floor(Math.random() * aliImages.length);
+    return aliImages[randomIndex];
+}
+
 // Load current question
 function loadQuestion() {
     if (currentQuestionIndex >= quizData.length) {
@@ -189,6 +197,12 @@ function loadQuestion() {
     questionText.textContent = question.question;
     questionFeedback.textContent = '';
     questionFeedback.className = 'question-feedback';
+
+    // Update Ali image
+    const aliImg = document.getElementById('aliImage');
+    if (aliImg) {
+        aliImg.src = getRandomAliImage();
+    }
 
     // Clear previous answers
     answersContainer.innerHTML = '';

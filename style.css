@@ -174,6 +174,49 @@ body {
     background: var(--gradient);
 }
 
+/* Ali cat image corner */
+.ali-corner {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.ali-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+    animation: aliFloat 3s ease-in-out infinite;
+}
+
+.ali-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
+}
+
+.ali-tooltip {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 4px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+@keyframes aliFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
 .question-text {
     font-size: 1.5rem;
     font-weight: 600;
@@ -874,6 +917,16 @@ body {
 
     .kindness-text {
         font-size: 1.1rem;
+    }
+
+    .ali-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ali-tooltip {
+        font-size: 10px;
+        padding: 3px 8px;
     }
 }
 
