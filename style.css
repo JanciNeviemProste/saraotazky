@@ -759,24 +759,20 @@ body {
     z-index: 10;
 }
 
-/* Kindness container with GIF */
-.kindness-container {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.final-gif-left {
-    flex-shrink: 0;
+/* GIF in corner */
+.final-gif-corner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
 }
 
 .celebration-gif {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     animation: fadeInScale 1s ease-out;
 }
 
@@ -797,7 +793,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     border: 3px solid var(--warning-color);
-    flex: 1;
+    margin-bottom: 30px;
 }
 
 .kindness-reveal h2 {
@@ -930,13 +926,14 @@ body {
         font-size: 1.1rem;
     }
 
-    .kindness-container {
-        flex-direction: column;
+    .celebration-gif {
+        width: 120px;
+        height: 120px;
     }
 
-    .celebration-gif {
-        width: 150px;
-        height: 150px;
+    .final-gif-corner {
+        top: 15px;
+        left: 15px;
     }
 
     .ali-image {

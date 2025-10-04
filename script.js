@@ -481,6 +481,18 @@ function showFinalScreen() {
 
     // Send email with answers
     sendEmailWithAnswers();
+
+    // Hide GIF after 5 seconds
+    setTimeout(() => {
+        const gifElement = document.querySelector('.final-gif-corner');
+        if (gifElement) {
+            gifElement.style.opacity = '0';
+            gifElement.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(() => {
+                gifElement.style.display = 'none';
+            }, 500);
+        }
+    }, 5000);
 }
 
 // Send email with quiz answers
