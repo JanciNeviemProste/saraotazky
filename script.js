@@ -11,7 +11,7 @@ const EMAILJS_CONFIG = {
 const quizData = [
     {
         type: 'single',
-        question: "Koľko € dávala Bitwala za odporučenie?",
+        question: "Koľko € dávala Bitwala za jej odporúčenie?",
         answers: ["5€", "10€", "15€", "20€"],
         correct: 2, // Index of correct answer
         feedback: "Správne! Zarobené :D"

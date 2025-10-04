@@ -149,14 +149,14 @@ body {
 /* Ali cat image floating around */
 .ali-image {
     position: fixed;
-    width: 90px;
-    height: 90px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--primary-color);
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
     z-index: 1;
-    opacity: 0.85;
+    opacity: 0.9;
     animation: aliFloatAround 25s ease-in-out infinite;
     pointer-events: none;
 }
@@ -897,8 +897,8 @@ body {
     }
 
     .ali-image {
-        width: 60px;
-        height: 60px;
+        width: 180px;
+        height: 180px;
     }
 }
 
