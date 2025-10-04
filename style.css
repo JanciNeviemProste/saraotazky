@@ -759,13 +759,45 @@ body {
     z-index: 10;
 }
 
+/* Kindness container with GIF */
+.kindness-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.final-gif-left {
+    flex-shrink: 0;
+}
+
+.celebration-gif {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeInScale 1s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* Kindness reveal */
 .kindness-reveal {
     background: linear-gradient(135deg, #fef3c7, #fde68a);
     border-radius: 20px;
     padding: 30px;
-    margin-bottom: 30px;
     border: 3px solid var(--warning-color);
+    flex: 1;
 }
 
 .kindness-reveal h2 {
@@ -781,31 +813,6 @@ body {
     color: var(--dark-text);
     line-height: 1.8;
     font-weight: 400;
-}
-
-/* Final GIF */
-.final-gif {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.celebration-gif {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    animation: fadeInScale 1s ease-out;
-}
-
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 /* Utility classes */
@@ -921,6 +928,15 @@ body {
 
     .kindness-text {
         font-size: 1.1rem;
+    }
+
+    .kindness-container {
+        flex-direction: column;
+    }
+
+    .celebration-gif {
+        width: 150px;
+        height: 150px;
     }
 
     .ali-image {
