@@ -12,8 +12,8 @@ const quizData = [
     {
         type: 'single',
         question: "Koľko € dávala Bitwala za jej odporúčenie?",
-        answers: ["5€", "10€", "15€", "20€"],
-        correct: 2, // Index of correct answer
+        answers: ["5€", "10€", "15€", "30€"],
+        correct: 2, // Index of correct answer (15€)
         feedback: "Správne! Zarobené :D"
     },
     {
