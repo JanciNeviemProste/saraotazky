@@ -313,6 +313,7 @@ function loadQuestion() {
 // Handle answer selection (single choice)
 function selectAnswer(selectedIndex) {
     const question = quizData[currentQuestionIndex];
+    console.log('Selected index:', selectedIndex, 'Correct index:', question.correct, 'Match:', selectedIndex === question.correct);
 
     if (question.type === 'image-single') {
         const cards = document.querySelectorAll('.image-answer-card');

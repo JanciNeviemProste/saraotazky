@@ -156,10 +156,10 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
     border: 5px solid var(--primary-color);
     box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4);
-    z-index: 1;
+    z-index: 0;
     opacity: 0.9;
     animation: aliFloatAround 25s ease-in-out infinite;
-    pointer-events: none;
+    pointer-events: none !important;
     padding: 10px;
 }
 
