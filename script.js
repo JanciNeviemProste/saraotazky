@@ -333,17 +333,18 @@ function selectAnswer(selectedIndex) {
         const buttons = document.querySelectorAll('.answer-btn');
         buttons.forEach(btn => btn.disabled = true);
 
-        // Store the answer
-        userAnswers[currentQuestionIndex] = {
-            question: question.question,
-            answer: question.answers[selectedIndex],
-            answerIndex: selectedIndex,
-            type: 'single'
-        };
-
         // Check if answer is correct (if validation needed)
         if (question.correct === -1 || selectedIndex === question.correct) {
+            // Store the answer
+            userAnswers[currentQuestionIndex] = {
+                question: question.question,
+                answer: question.answers[selectedIndex],
+                answerIndex: selectedIndex,
+                type: 'single'
+            };
+
             buttons[selectedIndex].classList.add('correct');
+            saveProgress();
             showFeedbackAndContinue(question, true);
         } else {
             buttons[selectedIndex].classList.add('wrong');
@@ -360,8 +361,6 @@ function selectAnswer(selectedIndex) {
             }, 2000);
         }
     }
-
-    saveProgress();
 }
 
 // Submit text answer
