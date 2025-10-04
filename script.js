@@ -166,17 +166,15 @@ if (passwordInput) {
 
 // Initialize quiz
 function initQuiz() {
+    // Reset quiz to start fresh (clear old localStorage)
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    localStorage.removeItem('saraQuizProgress');
+    localStorage.removeItem('saraQuizAnswers');
+
     totalQuestionsEl.textContent = quizData.length;
     loadQuestion();
     updateProgress();
-
-    // Load saved progress if exists
-    const savedProgress = localStorage.getItem('saraQuizProgress');
-    if (savedProgress) {
-        const progress = JSON.parse(savedProgress);
-        currentQuestionIndex = progress.questionIndex || 0;
-        userAnswers = progress.answers || [];
-    }
 }
 
 // Random Ali cat images
