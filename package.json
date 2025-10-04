@@ -1,0 +1,25 @@
+{
+  "name": "sara-quiz",
+  "version": "1.0.0",
+  "description": "Special quiz with surprises for Sara",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static site'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "quiz",
+    "surprise",
+    "romantic",
+    "gift"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

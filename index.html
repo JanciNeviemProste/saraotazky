@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvíz pre Sáru 🎯</title>
+    <meta name="description" content="Špeciálny kvíz s prekvapeniami">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="background-hearts"></div>
+
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <h1>🔒 Prístup</h1>
+            <p class="login-question">Jedlo ktoré vkuse jem?</p>
+            <input type="text" id="passwordInput" class="password-input" placeholder="Tvoja odpoveď...">
+            <button class="login-btn" onclick="checkPassword()">Vstúpiť</button>
+            <div class="login-error" id="loginError"></div>
+        </div>
+    </div>
+
+    <div class="container hidden" id="mainContainer">
+        <header class="quiz-header">
+            <h1>🎯 Kvíz pre Sáru 🎯</h1>
+            <p class="subtitle">Odpovedaj na otázky</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text">
+                <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span>
+            </div>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <div class="question-card">
+                <h2 class="question-text" id="questionText">Načítavam otázku...</h2>
+                <div class="answers-container" id="answersContainer">
+                    <!-- Answers will be dynamically inserted here -->
+                </div>
+                <div class="question-feedback" id="questionFeedback"></div>
+            </div>
+        </div>
+
+        <div class="final-screen hidden" id="finalScreen">
+            <div class="final-card">
+                <div class="confetti big-confetti"></div>
+                <h1 class="final-title">💝 Ďakujem za odpovede! 💝</h1>
+                <div class="kindness-reveal">
+                    <h2>✨ Kindness znamená pre mňa: ✨</h2>
+                    <p class="kindness-text">
+                        Rozdávať ľuďom a deťom ovocie, kinder vajcia
+                        ktoré dokážu niekomu rozžiariť deň. 🍎🥚💛 Lebo čím viac máš, tým viac treba dávať druhým.
+                    </p>
+                </div>
+                <button class="restart-btn" onclick="restartQuiz()">Hrať znova</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
