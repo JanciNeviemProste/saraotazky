@@ -174,47 +174,47 @@ body {
     background: var(--gradient);
 }
 
-/* Ali cat image corner */
-.ali-corner {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
+/* Ali cat image floating around */
 .ali-image {
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-    transition: all 0.3s ease;
-    animation: aliFloat 3s ease-in-out infinite;
+    z-index: 5;
+    opacity: 0.85;
+    animation: aliFloatAround 20s ease-in-out infinite;
+    pointer-events: none;
 }
 
-.ali-image:hover {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
-}
-
-.ali-tooltip {
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--primary-color);
-    background: rgba(59, 130, 246, 0.1);
-    padding: 4px 10px;
-    border-radius: 10px;
-    white-space: nowrap;
-}
-
-@keyframes aliFloat {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-8px); }
+@keyframes aliFloatAround {
+    0% {
+        top: 10%;
+        right: 5%;
+        transform: rotate(0deg);
+    }
+    25% {
+        top: 70%;
+        right: 8%;
+        transform: rotate(90deg);
+    }
+    50% {
+        top: 85%;
+        right: 50%;
+        transform: rotate(180deg);
+    }
+    75% {
+        top: 30%;
+        right: 90%;
+        transform: rotate(270deg);
+    }
+    100% {
+        top: 10%;
+        right: 5%;
+        transform: rotate(360deg);
+    }
 }
 
 .question-text {
@@ -920,13 +920,8 @@ body {
     }
 
     .ali-image {
-        width: 60px;
-        height: 60px;
-    }
-
-    .ali-tooltip {
-        font-size: 10px;
-        padding: 3px 8px;
+        width: 50px;
+        height: 50px;
     }
 }
 
