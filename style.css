@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Animated background hearts */
+/* Background */
 .background-hearts {
     position: fixed;
     top: 0;
@@ -41,34 +41,6 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: -1;
-}
-
-.background-hearts::before,
-.background-hearts::after {
-    content: '🎯';
-    position: absolute;
-    font-size: 20px;
-    animation: float 15s infinite ease-in-out;
-    opacity: 0.1;
-}
-
-.background-hearts::before {
-    top: 10%;
-    left: 20%;
-    animation-delay: 0s;
-}
-
-.background-hearts::after {
-    top: 70%;
-    right: 15%;
-    animation-delay: 7s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    25% { transform: translateY(-20px) rotate(5deg); }
-    50% { transform: translateY(-10px) rotate(-5deg); }
-    75% { transform: translateY(-15px) rotate(3deg); }
 }
 
 /* Container */

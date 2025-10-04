@@ -62,8 +62,8 @@ const quizData = [
         type: 'single',
         question: "Môžeš papať čokoládu?",
         answers: ["Áno", "Iba horkú", "Nie nemôžem"],
-        correct: 1,
-        feedback: "Správne! 🍫"
+        correct: -1, // All valid
+        feedback: "V pohode! 🍫"
     },
     {
         type: 'image-single',
@@ -71,7 +71,8 @@ const quizData = [
         answers: [
             { text: "Via ferrata Kyseľ", image: "kysel_01.jpg" },
             { text: "Via ferrata Dve veže", image: "dve_veze.jpg" },
-            { text: "Via ferrata Martinské hole", image: "martinske_hole.jpg" }
+            { text: "Via ferrata Martinské hole", image: "martinske_hole.jpg" },
+            { text: "Via ferrata Prielom Hornádu", image: "https://www.viaferrata.sk/images/ferraty/prielom/prielom_01.jpg" }
         ],
         correct: -1, // No wrong answer
         feedback: "Musíme tam ísť! 🧗‍♀️"
