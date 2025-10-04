@@ -176,44 +176,49 @@ body {
 
 /* Ali cat image floating around */
 .ali-image {
-    position: absolute;
-    width: 70px;
-    height: 70px;
+    position: fixed;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary-color);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-    z-index: 5;
+    z-index: 1;
     opacity: 0.85;
-    animation: aliFloatAround 20s ease-in-out infinite;
+    animation: aliFloatAround 25s ease-in-out infinite;
     pointer-events: none;
 }
 
 @keyframes aliFloatAround {
     0% {
-        top: 10%;
-        right: 5%;
-        transform: rotate(0deg);
+        top: 5%;
+        left: 10%;
+        transform: rotate(0deg) scale(1);
     }
-    25% {
-        top: 70%;
-        right: 8%;
-        transform: rotate(90deg);
+    20% {
+        top: 15%;
+        left: 85%;
+        transform: rotate(72deg) scale(1.1);
     }
-    50% {
-        top: 85%;
-        right: 50%;
-        transform: rotate(180deg);
+    40% {
+        top: 75%;
+        left: 80%;
+        transform: rotate(144deg) scale(0.9);
     }
-    75% {
-        top: 30%;
-        right: 90%;
-        transform: rotate(270deg);
+    60% {
+        top: 80%;
+        left: 15%;
+        transform: rotate(216deg) scale(1.05);
+    }
+    80% {
+        top: 40%;
+        left: 5%;
+        transform: rotate(288deg) scale(0.95);
     }
     100% {
-        top: 10%;
-        right: 5%;
-        transform: rotate(360deg);
+        top: 5%;
+        left: 10%;
+        transform: rotate(360deg) scale(1);
     }
 }
 
@@ -755,7 +760,7 @@ body {
 
 .answer-image {
     width: 100%;
-    height: 200px;
+    height: 280px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
@@ -886,7 +891,7 @@ body {
     }
 
     .answer-image {
-        height: 180px;
+        height: 220px;
     }
 
     .login-card {
@@ -920,8 +925,8 @@ body {
     }
 
     .ali-image {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 }
 

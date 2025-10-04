@@ -32,14 +32,14 @@ const quizData = [
     },
     {
         type: 'image-multi',
-        question: "Ferrari alebo Massety?",
+        question: "Aké auto sa ti najviac páči?",
         answers: [
-            { text: "Ferrari 296 GTB", image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400" },
-            { text: "Maserati MC20", image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400" },
-            { text: "Lamborghini Huracán", image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=400" },
-            { text: "Porsche 911 GT3", image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400" },
-            { text: "McLaren 720S", image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=400" },
-            { text: "Aston Martin Vantage", image: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=400" }
+            { text: "Ferrari 296 GTB", image: "https://cdn.ferrari.com/cms/network/media/img/resize/63c5451c14e24d75a27ce6a2-ferrari-296-gtb-assetto-fiorano?width=800" },
+            { text: "Maserati MC20", image: "https://www.maserati.com/content/dam/maserati/international/Models/default/2023/mc20/hero/Maserati-MC20-Hero-Desktop.jpg&width=800" },
+            { text: "Lamborghini Huracán", image: "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_02_m.jpg&width=800" },
+            { text: "Porsche 911 GT3", image: "https://files.porsche.com/filestore/image/multimedia/none/992-gt3-modelimage-sideshot/model/765dfc51-51bc-11eb-80d0-005056bbdc38/porsche-model.png" },
+            { text: "BMW M4 Competition", image: "https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/performance/m-series/bmw-m4-coupe-2020/bmw-4-series-m-automobiles-sp-desktop.jpg" },
+            { text: "Mercedes-AMG GT", image: "https://www.mercedes-benz.com/en/vehicles/passenger-cars/amg/mercedes-amg-gt/_jcr_content/root/paragraph/paragraph-right/paragraphimage/image/MQ7-0-image-20220419101504/02-mercedes-amg-gt-c-3400x1440.jpeg" }
         ],
         correct: [], // All valid
         feedback: "Dobrý výber áut! 🏎️"
